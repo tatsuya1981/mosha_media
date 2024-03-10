@@ -1,0 +1,19 @@
+@use "../global/" as g;
+
+/*!
+component > articles
+------------------------------
+*/
+
+.c-articles {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1, 1fr;
+}
+
+@include g.min(md) {
+  .c-articles {
+    gap: 40px 24px;
+    grid-template-columns: 3, 1fr;
+  }
+}

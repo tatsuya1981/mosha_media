@@ -1,6 +1,39 @@
+@use "../global/" as g;
+
 /*!
 component > title
 ------------------------------
 */
 
-/*💡ここに『タイトルコンポーネントのコード』を書く*/
+.c-title-small,
+.c-title-medium {
+  color: var(--color-font-black);
+}
+
+.c-title--center {
+  text-align: center;
+}
+
+// small
+.c-title-small {
+  font-size: 20px;
+  line-height: 1.0;
+}
+
+@include g.min(md) {
+  .c-title-small {
+    font-size: 26px;
+  }
+}
+
+// medium
+.c-title-medium {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@include g.min(md) {
+  .c-title-medium {
+    font-size: 26px;
+  }
+}

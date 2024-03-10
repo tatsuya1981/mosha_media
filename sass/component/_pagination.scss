@@ -1,6 +1,19 @@
+@use "../global/" as g;
+
 /*!
 component > pagination
 ------------------------------
 */
 
-/*💡ここに『ページネーションコンポーネントのコード』を書く*/
+.c-pagination {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-bg-gray);
+}
+
+.c-pagination-black {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-bg-black);
+  color: var(--color-font-white);
+}

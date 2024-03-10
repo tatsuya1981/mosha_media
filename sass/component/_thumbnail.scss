@@ -1,6 +1,29 @@
+@use "../global/" as g;
+
 /*!
 component > thumbnail
 ------------------------------
 */
+.c-thumbnail:hover,
+.c-thumbnail-large:hover {
+  opacity: 0.5;
+}
 
-/*💡ここに『サムネイルコンポーネントのコード』を書く*/
+
+.c-thumbnail {
+  max-width: 324px;
+  background-color: var(--color-bg-gray-light);
+  color: var(--color-font-gray);
+}
+
+@include g.min(md) {
+  .c-thumbnail {
+    max-width: 344px;
+  }
+}
+
+.c-thumbnail-large {
+  max-width: 760px;
+  background-color: var(--color-bg-gray-light);
+  color: var(--color-font-gray);
+}

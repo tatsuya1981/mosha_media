@@ -1,6 +1,42 @@
+@use "../global/" as g;
+
 /*!
 component > button
 ------------------------------
 */
 
-/*💡ここに『ボタンコンポーネントのコード』を書く*/
+.c-button {
+  color: var(--color-font-white);
+  background-color: var(--color-bg-black);
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+@include g.min(md) {
+  .c-button {
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .c-button:hover {
+    background-color: var(--color-bg-primary-hover);
+  }
+}
+.c-button--size-small {
+  width: 100%;
+  max-width: 95px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.c-button--size-midium {
+  width: 100%;
+  max-width: 180px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+}
+
+.c-button--center {
+  margin: 0 auto;
+}

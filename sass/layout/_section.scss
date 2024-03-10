@@ -7,7 +7,7 @@ layout > section
 .l-section {
   padding: 56px 0;
 }
-@media screen and (min-width: 768px) {
+@include g.min(md) {
   .l-section {
     padding: 64px 0;
   }
