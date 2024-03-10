@@ -1,0 +1,18 @@
+@use "../global/" as g;
+
+/*!
+layout > section-body
+------------------------------
+*/
+.l-section-body-s {
+  margin-top: 24px;
+}
+.l-section-body-m {
+  margin-top: 40px;
+}
+.l-section-body-l {
+  margin-top: 64px;
+}
+.l-section-body-xl {
+  margin-top: 80px;
+}

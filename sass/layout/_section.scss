@@ -1,0 +1,14 @@
+@use "../global/" as g;
+
+/*!
+layout > section
+------------------------------
+*/
+.l-section {
+  padding: 56px 0;
+}
+@media screen and (min-width: 768px) {
+  .l-section {
+    padding: 64px 0;
+  }
+}
