@@ -5,4 +5,40 @@ layout > header
 ------------------------------
 */
 
-/*💡ここに『ヘッターのコード』を書く*/
+.header {
+  width: 100%;
+  max-height: 105px;
+}
+
+.header-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto ;
+  padding-top: 18.5px;
+}
+
+.header-container a {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-items {
+  display: flex;
+  gap: 8px;
+}
+
+
+.header-items:nth-child(1) {
+  margin-right: auto;
+}
+
+.header-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.header-menu {
+  height: 40px;
+  background-color: var(--color-bg-primary);
+  margin-top: 18.5px;
+}
