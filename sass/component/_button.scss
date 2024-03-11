@@ -11,14 +11,16 @@ component > button
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--color-bg-primary-hover);
+  }
 }
+
 @include g.min(md) {
   .c-button {
     font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  .c-button:hover {
-    background-color: var(--color-bg-primary-hover);
   }
 }
 .c-button--size-small {
@@ -29,7 +31,7 @@ component > button
   place-items: center;
 }
 
-.c-button--size-midium {
+.c-button--size-medium {
   width: 100%;
   max-width: 180px;
   height: 45px;

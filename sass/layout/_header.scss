@@ -13,20 +13,20 @@ layout > header
 .header-container {
   display: flex;
   width: 90%;
-  margin: 0 auto ;
-  padding-top: 18.5px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .header-container a {
   display: flex;
-  align-items: flex-end;
 }
 
 .header-items {
   display: flex;
   gap: 8px;
 }
-
 
 .header-items:nth-child(1) {
   margin-right: auto;
@@ -37,8 +37,25 @@ layout > header
   height: 32px;
 }
 
-.header-menu {
+.header-nav {
   height: 40px;
   background-color: var(--color-bg-primary);
-  margin-top: 18.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu {
+  width: 90%;
+  overflow-x: auto;
+}
+
+.header-menu-list {
+  width: max-content;
+  display: flex;
+  list-style: none;
+}
+
+.header-menu-list a {
+  color: var(--color-font-white);
 }
