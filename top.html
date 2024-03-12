@@ -49,13 +49,26 @@
       <div class="header-container">
         <div class="header-items">
           <a href="top.html" rel="noreferrer noopener">
-            <img
+            <!-- <img
               src="img/header/logo-sp.png"
               width="180"
               height="28"
               alt="..."
               decoding="async"
-            />
+            /> -->
+            <picture class="header-logo-img">
+              <source
+                media="(max-width: 768px)"
+                srcset="img/header/logo-sp.png"
+              />
+              <img
+                src="img/header/logo.png"
+                width="180"
+                height="28"
+                alt="..."
+                decoding="async"
+              />
+            </picture>
           </a>
         </div>
         <div class="header-items">

@@ -350,6 +350,10 @@ body {
   }
 }
 
+html {
+  scrollbar-color: var(--color-bg-gray) yellow;
+}
+
 /*!
 component > button
 ------------------------------
@@ -522,6 +526,11 @@ layout > header
   align-items: center;
   margin: auto;
 }
+@media (width >= 768px) {
+  .header-container {
+    height: 75px;
+  }
+}
 
 .header-container a {
   display: flex;
@@ -536,6 +545,16 @@ layout > header
   margin-right: auto;
 }
 
+.header-logo-img img {
+  display: flex;
+}
+@media (width >= 768px) {
+  .header-logo-img img {
+    width: 320px;
+    height: 41px;
+  }
+}
+
 .header-icon {
   width: 32px;
   height: 32px;
@@ -547,6 +566,11 @@ layout > header
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (width >= 768px) {
+  .header-nav {
+    font-size: 14px;
+  }
 }
 
 .header-menu {
@@ -562,6 +586,24 @@ layout > header
 
 .header-menu-list a {
   color: var(--color-font-white);
+  text-decoration: none;
+}
+
+.header-menu-list li:not(:last-child) {
+  padding-right: 32px;
+  position: relative;
+  display: inline-block;
+}
+
+.header-menu-list li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 21px;
+  background-color: var(--color-font-white);
+  position: absolute;
+  top: 3px;
+  right: 16px;
 }
 
 /*!

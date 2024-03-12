@@ -17,6 +17,10 @@ layout > header
   justify-content: center;
   align-items: center;
   margin: auto;
+
+  @include g.min(md) {
+    height: 75px;
+  }
 }
 
 .header-container a {
@@ -32,6 +36,14 @@ layout > header
   margin-right: auto;
 }
 
+.header-logo-img img {
+  display: flex;
+  @include g.min(md) {
+    width: 320px;
+    height: 41px;
+  }
+}
+
 .header-icon {
   width: 32px;
   height: 32px;
@@ -43,6 +55,11 @@ layout > header
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include g.min(md) {
+    font-size: 14px;
+  }
+  
 }
 
 .header-menu {
@@ -58,4 +75,22 @@ layout > header
 
 .header-menu-list a {
   color: var(--color-font-white);
+  text-decoration: none;
+}
+
+.header-menu-list li:not(:last-child) {
+  padding-right: 32px;
+  position: relative;
+  display: inline-block;
+}
+
+.header-menu-list li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 21px;
+  background-color: var(--color-font-white);
+  position: absolute;
+  top: 3px;
+  right: 16px;
 }
