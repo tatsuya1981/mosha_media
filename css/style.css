@@ -351,7 +351,7 @@ body {
 }
 
 html {
-  scrollbar-color: var(--color-bg-gray) yellow;
+  scrollbar-color: var(--color-bg-gray) white;
 }
 
 /*!
@@ -508,7 +508,13 @@ layout > container
 layout > footer
 ------------------------------
 */
-/*💡ここに『フッターのコード』を書く*/
+.footer-pc {
+  width: 100%;
+  background-image: url(../../img/footer/bg-cta-sp\ 1.png);
+  background-size: cover;
+  position: relative;
+}
+
 /*!
 layout > header
 ------------------------------
