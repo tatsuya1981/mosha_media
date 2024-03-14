@@ -4,9 +4,73 @@
 layout > footer
 ------------------------------
 */
-.footer-pc {
+.footer-container {
   width: 100%;
-  background-image: url(../../img/footer/bg-cta-sp\ 1.png);
+  background-image: url(../../img/footer/bg-cta-sp.png);
   background-size: cover;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include g.min(md) {
+    width: 100%;
+    background-image: url(../../img/footer/bg-cta.png);
+    flex-direction: row-reverse;
+  }
+}
+
+.footer-container-pc {
+  height: 183px;
+}
+
+.footer-container-pc img{
+ width: 324px;
+ height: auto;
+
+ @include g.min(md) {
+  width: 304px;
+}
+}
+
+.footer-container-items {
+  margin-top: 24px;
+  flex-direction: column;
+
+  @include g.min(md) {
+    margin: 0 40px 0 0;
+  }
+}
+.footer-container-items img {
+  margin: 0 auto;
+
+  @include g.min(md) {
+    width: 415px;
+    height: 49px;
+  }
+}
+
+.footer-container-items p {
+  font-size: 12px;
+  color: var(--color-font-white);
+  text-align: center;
+  margin-top: 5px;
+
+@include g.min(md) {
+  font-size: 14px;
+  text-align: start;
+  margin-top: 12px;
+  line-height: 1;
+}
+}
+
+.footer-container-items div {
+  @include g.min(md) {
+    margin: 16px 0 0 0;
+  }
+}
+
+.footer-container-items  span {
+  font-weight: bold;
+  
 }

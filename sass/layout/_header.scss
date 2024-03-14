@@ -18,6 +18,7 @@ layout > header
   margin: auto;
 
   @include g.min(md) {
+    width: 80%;
     height: 75px;
   }
 }
@@ -64,6 +65,10 @@ layout > header
 .header-menu {
   width: 90%;
   overflow-x: auto;
+
+  @include g.min(md) {
+    width: 80%;
+  }
 }
 
 .header-menu-list {
