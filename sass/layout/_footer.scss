@@ -4,6 +4,11 @@
 layout > footer
 ------------------------------
 */
+
+.footer {
+  background-color: rgba(197, 171, 95, 0.1);
+}
+
 .footer-container {
   width: 100%;
   background-image: url(../../img/footer/bg-cta-sp.png);
@@ -24,13 +29,13 @@ layout > footer
   height: 183px;
 }
 
-.footer-container-pc img{
- width: 324px;
- height: auto;
+.footer-container-pc img {
+  width: 324px;
+  height: auto;
 
- @include g.min(md) {
-  width: 304px;
-}
+  @include g.min(md) {
+    width: 304px;
+  }
 }
 
 .footer-container-items {
@@ -56,12 +61,12 @@ layout > footer
   text-align: center;
   margin-top: 5px;
 
-@include g.min(md) {
-  font-size: 14px;
-  text-align: start;
-  margin-top: 12px;
-  line-height: 1;
-}
+  @include g.min(md) {
+    font-size: 14px;
+    text-align: start;
+    margin-top: 12px;
+    line-height: 1;
+  }
 }
 
 .footer-container-items div {
@@ -70,7 +75,87 @@ layout > footer
   }
 }
 
-.footer-container-items  span {
+.footer-container-items span {
   font-weight: bold;
-  
+}
+
+.footer-main {
+  @include g.min(md) {
+    max-width: 1080px;
+  }
+}
+
+.footer-text-logo img {
+  width: 100%;
+  height: auto;
+  max-width: 323px;
+  max-height: 42px;
+
+  @include g.min(md) {
+    max-width: 380px;
+    max-height: 45px;
+  }
+
+  @include g.min(lg) {
+    max-width: 466px;
+    max-height: 50px;
+  }
+}
+
+.footer-text-wrapper {
+  margin-top: 16px;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 1.75;
+  // display: block;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-list {
+  margin-top: 32px;
+
+  @include g.min(md) {
+    margin-top: -16px;
+  }
+}
+
+.footer-list-link {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include g.min(md) {
+    justify-content: flex-end;
+  }
+}
+
+.footer-list-link li {
+  font-size: 12px;
+}
+
+.footer-list-link li ::after {
+  content: "/";
+}
+
+.footer-list-link a {
+  text-decoration: none;
+  color: var(--color-font-base);
+}
+
+.copyright {
+  margin-top: 40px;
+  text-align: center;
+  border-top: solid var(--color-border-gray);
 }
