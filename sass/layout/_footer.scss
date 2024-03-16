@@ -81,7 +81,8 @@ layout > footer
 
 .footer-main {
   @include g.min(md) {
-    max-width: 1080px;
+    width: 80%;
+    max-width: none;
   }
 }
 
@@ -145,13 +146,18 @@ layout > footer
   font-size: 12px;
 }
 
-.footer-list-link li ::after {
+.footer-list-link li:not(:first-child)::before {
   content: "/";
+  padding: 2px;
 }
 
 .footer-list-link a {
   text-decoration: none;
   color: var(--color-font-base);
+  &:hover {
+    opacity: 0.3;
+  }
+
 }
 
 .copyright {
