@@ -12,6 +12,7 @@ component > button
   font-weight: 500;
   display: inline-block;
   transition: background-color 0.3s;
+  border-radius: 100px;
 
   &:hover {
     background-color: var(--color-bg-primary-hover);

@@ -12,13 +12,12 @@ component > thumbnail
 
 .c-thumbnail {
   max-width: 324px;
-  background-color: var(--color-bg-gray-light);
-  color: var(--color-font-gray);
-}
+  border-radius: 16px;
+  // background-color: var(--color-bg-gray-light);
+  // color: var(--color-font-gray);
 
-@include g.min(md) {
-  .c-thumbnail {
-    max-width: 344px;
+  @include g.min(md) {
+      max-width: 344px;
   }
 }
 
@@ -26,4 +25,5 @@ component > thumbnail
   max-width: 760px;
   background-color: var(--color-bg-gray-light);
   color: var(--color-font-gray);
+  border-radius: 16px;
 }

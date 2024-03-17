@@ -365,6 +365,7 @@ component > button
   font-weight: 500;
   display: inline-block;
   transition: background-color 0.3s;
+  border-radius: 100px;
 }
 .c-button:hover {
   background-color: var(--color-bg-primary-hover);
@@ -436,19 +437,19 @@ component > thumbnail
 
 .c-thumbnail {
   max-width: 324px;
-  background-color: var(--color-bg-gray-light);
-  color: var(--color-font-gray);
+  border-radius: 16px;
 }
-
 @media (width >= 768px) {
   .c-thumbnail {
     max-width: 344px;
   }
 }
+
 .c-thumbnail-large {
   max-width: 760px;
   background-color: var(--color-bg-gray-light);
   color: var(--color-font-gray);
+  border-radius: 16px;
 }
 
 /*!
@@ -828,5 +829,92 @@ layout > section
     padding: 64px 0;
   }
 }
+/*!
+page > top
+------------------------------
+*/
+.top-kv {
+  width: 100%;
+  padding: 56px 0 8px 0;
+  background-image: url(../../img/top/bg-pattern-kv@2x.png);
+  background-size: auto;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+.top-kv-container {
+  display: inline-block;
+  border: solid;
+  border-color: var(--color-border-primary);
+  border-radius: 16px;
+}
+
+.top-kv-thumbnail {
+  height: 160px;
+  border-radius: 16px;
+}
+
+.top-kv-thumbnail img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.top-kv-title {
+  padding: 16px;
+  background-color: var(--color-bg-white);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.top-kv-button {
+  background-color: var(--color-bg-gold);
+  font-size: 12px;
+}
+
+.top-kv-text h1 {
+  text-align: start;
+  font-size: 18px;
+}
+
+.top-kv-text p {
+  text-align: right;
+  font-size: 12px;
+}
+
+.top-kv-pine {
+  display: flex;
+  position: relative;
+  top: 110px;
+}
+
+.top-kv-musha {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -62px;
+}
+
+/*!
+page > single
+------------------------------
+*/
+/*💡ここに『シングルページのコード』を書く*/
+/*!
+page > page
+------------------------------
+*/
+/*💡ここに『説明ページのコード』を書く*/
+/*!
+page > contact
+------------------------------
+*/
+/*💡ここに『コンタクトページのコード』を書く*/
+/*!
+page > archive
+------------------------------
+*/
+/*💡ここに『アーカイブページのコード』を書く*/
 
 /*# sourceMappingURL=style.css.map */
