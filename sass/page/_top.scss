@@ -12,6 +12,10 @@ page > top
   background-size: auto;
   background-repeat: repeat;
   text-align: center;
+
+  @include g.min(lg) {
+    padding: 46px 0 46px 0;
+  }
 }
 
 .top-kv-container {
@@ -27,6 +31,19 @@ page > top
     max-width: 650px;
     height: 200px;
   }
+
+  @include g.min(lg) {
+    position: relative;
+    z-index: 20;
+  }
+
+  @include g.min(xl) {
+    margin: 0 0 0 10%;
+    max-width: 840px;
+    height: 273px;
+    position: relative;
+    z-index: 20;
+  }
 }
 
 .top-kv-thumbnail {
@@ -35,6 +52,10 @@ page > top
   border-top-right-radius: 16px;
   @include g.min(md) {
     max-width: 325px;
+  }
+
+  @include g.min(lg) {
+    max-width: 420px;
   }
 }
 
@@ -59,6 +80,11 @@ page > top
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
   }
+
+  @include g.min(xl) {
+    width: 419px;
+    height: 270px;
+  }
 }
 
 .top-kv-title {
@@ -75,6 +101,12 @@ page > top
     justify-content: center;
     align-items: center;
     max-width: 325px;
+  }
+
+  @include g.min(xl) {
+    max-width: 50%;
+    width: 419px;
+    height: 270px;
   }
 }
 
@@ -97,8 +129,8 @@ page > top
 .top-kv-text h1 {
   text-align: start;
   font-size: 18px;
-  @include g.min(md) {
-    
+  @include g.min(xl) {
+    font-size: 20px;
   }
 }
 
@@ -110,17 +142,70 @@ page > top
   @include g.min(md) {
     margin-top: 1rem;
   }
+
+  @include g.min(xl) {
+    margin-top: 40px;
+    margin-right: 32px;
+  }
 }
 
-.top-kv-pine {
+.top-kv-icon {
   display: flex;
-  position: relative;
-  top: 110px;
-}
-
-.top-kv-musha {
+  justify-content: space-between;
   padding-right: 5%;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: -62px;
+
+  @include g.min(lg) {
+    align-items: flex-end;
+    margin-top: -180px;
+  }
+
+  @include g.min(xl) {
+    padding-right: 0;
+    width: 1200px;
+    margin-top: -280px;
+  }
+  @include g.min(xll) {
+    width: 1230px;
+  }
+}
+
+.top-kv-pine-img-sp {
+ position: relative;
+ top: 110px;
+
+  @include g.min(lg) {
+    display: none;
+  }
+}
+
+.top-kv-pine-img {
+  display: none;
+  
+
+  @include g.min(lg) {
+    width: 250px;
+    height: 86px;
+    display: block;
+    margin-bottom: auto;
+  }
+  @include g.min(xl) {
+    position: relative;
+    top: 17px;
+  }
+
+}
+
+.top-kv-musha-img-sp {
+  @include g.min(xl) {
+    display: none;
+  }
+}
+
+.top-kv-musha-img {
+  display: none;
+
+  @include g.min(xl) {
+    display: block;
+    width: auto;
+  }
 }
