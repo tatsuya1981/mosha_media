@@ -16,6 +16,10 @@ page > top
   @include g.min(lg) {
     padding: 46px 0 46px 0;
   }
+
+  @include g.min(xll) {
+    padding-right: 5%;
+  }
 }
 
 .top-kv-container {
@@ -43,6 +47,10 @@ page > top
     height: 273px;
     position: relative;
     z-index: 20;
+  }
+
+  @include g.min(xll) {
+    margin: auto;
   }
 }
 
@@ -165,7 +173,10 @@ page > top
     margin-top: -280px;
   }
   @include g.min(xll) {
-    width: 1230px;
+    width: auto;
+    min-width: 1300px;
+    max-width: 1800px;
+    margin-right: auto;
   }
 }
 

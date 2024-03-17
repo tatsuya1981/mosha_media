@@ -4,17 +4,12 @@
 component > thumbnail
 ------------------------------
 */
-.c-thumbnail:hover,
-.c-thumbnail-large:hover {
-  opacity: 0.5;
-}
+
 
 
 .c-thumbnail {
   max-width: 324px;
   border-radius: 16px;
-  // background-color: var(--color-bg-gray-light);
-  // color: var(--color-font-gray);
 
   @include g.min(md) {
       max-width: 344px;
