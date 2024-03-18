@@ -27,6 +27,7 @@ page > top
   border: solid;
   border-color: var(--color-border-primary);
   border-radius: 16px;
+  overflow: hidden;
 
   @include g.min(md) {
     display: flex;
@@ -58,6 +59,7 @@ page > top
   height: 160px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  
   @include g.min(md) {
     max-width: 325px;
   }
@@ -72,7 +74,10 @@ page > top
   height: 160px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
   @include g.min(md) {
     display: none;
   }
@@ -80,6 +85,10 @@ page > top
 
 .top-kv-img {
   display: none;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include g.min(md) {
     display: block;
@@ -100,6 +109,7 @@ page > top
   background-color: var(--color-bg-white);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  
 
   @include g.min(md) {
     padding: 0;

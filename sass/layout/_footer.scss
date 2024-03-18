@@ -69,14 +69,18 @@ layout > footer
   }
 }
 
-.footer-container-items div {
+.footer-container-items span {
+  font-weight: bold;
+  color: var(--color-font-base);
+}
+
+.footer-container-items a {
+  text-decoration: none;
+  margin: auto;
+  margin-top: 24px;
   @include g.min(md) {
     margin: 16px 0 0 0;
   }
-}
-
-.footer-container-items span {
-  font-weight: bold;
 }
 
 .footer-main {
