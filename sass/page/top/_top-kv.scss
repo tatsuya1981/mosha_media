@@ -129,6 +129,7 @@ page > top
 }
 
 .top-kv-title-wrapper {
+  text-align: left;
   @include g.min(md) {
     height: 66%;
     width: 78%;

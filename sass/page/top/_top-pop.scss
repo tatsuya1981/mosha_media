@@ -1,0 +1,39 @@
+@use "../../global/" as g;
+
+.top-pop {
+  max-width: 324px;
+  height: 274px;
+  margin: 0 auto;
+}
+
+.top-pop-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-pop-day {
+  font-size: 12px;
+  color: var(--color-font-gray-light);
+}
+
+.top-pop-img-sp {
+  margin-top: 8px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  
+  @include g.min(md) {
+    display: none;
+  }
+}
+
+.top-pop-img {
+  display: none;
+}
+
+.top-pop p{
+  font-size: 18px;
+  font-weight: bold;
+}
