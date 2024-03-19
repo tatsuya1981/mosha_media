@@ -394,7 +394,6 @@ component > button
   max-width: 95px;
   height: 24px;
   text-align: center;
-  background-color: var(--color-bg-green);
   border-radius: 100px;
   color: var(--color-font-white);
   font-size: 12px;
@@ -413,6 +412,26 @@ component > button
   margin: 0 auto;
 }
 
+.c-button--JavaScript {
+  background-color: var(--color-bg-green);
+}
+
+.c-button--html {
+  background-color: var(--color-bg-gold);
+}
+
+.c-button--web {
+  background-color: var(--color-bg-pink);
+}
+
+.c-button--wordpress {
+  background-color: var(--color-bg-blue);
+}
+
+.c-button--webdesign {
+  background-color: var(--color-bg-orange);
+}
+
 /*!
 component > pagination
 ------------------------------
@@ -421,6 +440,7 @@ component > pagination
   width: 35px;
   height: 35px;
   background-color: var(--color-bg-gray);
+  line-height: 1;
 }
 
 .c-pagination-black {
@@ -428,6 +448,7 @@ component > pagination
   height: 35px;
   background-color: var(--color-bg-black);
   color: var(--color-font-white);
+  line-height: 1;
 }
 
 /*!
@@ -1091,10 +1112,22 @@ page > top
   }
 }
 
+.top-posts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
 .top-post {
   max-width: 324px;
   height: 274px;
   margin: 0 auto;
+}
+@media (width >= 768px) {
+  .top-post {
+    max-width: 344px;
+    height: 292px;
+  }
 }
 
 .top-post-type {
@@ -1124,10 +1157,36 @@ page > top
 .top-post-img {
   display: none;
 }
+@media (width >= 768px) {
+  .top-post-img {
+    display: block;
+    margin-top: 8px;
+    transition: 0.3s;
+    max-width: 100%;
+  }
+}
 
 .top-post h2 {
   font-size: 18px;
   font-weight: bold;
+}
+@media (width >= 768px) {
+  .top-post h2 {
+    font-size: 20px;
+  }
+}
+
+.top-pagination {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.top-pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*!

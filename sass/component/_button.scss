@@ -42,7 +42,6 @@ component > button
   max-width: 95px;
   height: 24px;
   text-align: center;
-  background-color: var(--color-bg-green);
   border-radius: 100px;
   color: var(--color-font-white);
   font-size: 12px;
@@ -59,4 +58,24 @@ component > button
 
 .c-button--center {
   margin: 0 auto;
+}
+
+.c-button--JavaScript {
+  background-color: var(--color-bg-green);
+}
+
+.c-button--html {
+  background-color: var(--color-bg-gold);
+}
+
+.c-button--web {
+  background-color: var(--color-bg-pink);
+}
+
+.c-button--wordpress {
+  background-color: var(--color-bg-blue);
+}
+
+.c-button--webdesign {
+  background-color: var(--color-bg-orange);
 }

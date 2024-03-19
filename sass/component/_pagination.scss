@@ -9,6 +9,7 @@ component > pagination
   width: 35px;
   height: 35px;
   background-color: var(--color-bg-gray);
+  line-height: 1;
 }
 
 .c-pagination-black {
@@ -16,4 +17,5 @@ component > pagination
   height: 35px;
   background-color: var(--color-bg-black);
   color: var(--color-font-white);
+  line-height: 1;
 }
