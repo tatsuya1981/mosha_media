@@ -527,7 +527,7 @@ layout > footer
 
 .footer-container {
   width: 100%;
-  background-image: url(../../img/footer/bg-cta-sp.png);
+  background-image: url(../img/footer/bg-cta-sp.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -537,7 +537,7 @@ layout > footer
 @media (width >= 768px) {
   .footer-container {
     width: 100%;
-    background-image: url(../../img/footer/bg-cta.png);
+    background-image: url(../img/footer/bg-cta.png);
     flex-direction: row-reverse;
   }
 }
@@ -841,7 +841,7 @@ page > top
 .top-kv {
   width: 100%;
   padding: 56px 0 8px 0;
-  background-image: url(../../img/top/bg-pattern-kv@2x.png);
+  background-image: url(../img/top/bg-pattern-kv@2x.png);
   background-size: auto;
   background-repeat: repeat;
   text-align: center;
@@ -1110,6 +1110,7 @@ page > top
 .top-post-img-sp {
   margin-top: 8px;
   transition: 0.3s;
+  max-width: 100%;
 }
 .top-post-img-sp:hover {
   transform: scale(1.05);
@@ -1124,7 +1125,7 @@ page > top
   display: none;
 }
 
-.top-post p {
+.top-post h2 {
   font-size: 18px;
   font-weight: bold;
 }

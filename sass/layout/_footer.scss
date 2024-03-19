@@ -11,7 +11,7 @@ layout > footer
 
 .footer-container {
   width: 100%;
-  background-image: url(../../img/footer/bg-cta-sp.png);
+  background-image: url(../img/footer/bg-cta-sp.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ layout > footer
 
   @include g.min(md) {
     width: 100%;
-    background-image: url(../../img/footer/bg-cta.png);
+    background-image: url(../img/footer/bg-cta.png);
     flex-direction: row-reverse;
   }
 }

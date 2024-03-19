@@ -19,6 +19,7 @@
 .top-post-img-sp {
   margin-top: 8px;
   transition: 0.3s;
+  max-width: 100%;
 
   &:hover {
     transform: scale(1.05);
@@ -33,7 +34,7 @@
   display: none;
 }
 
-.top-post p{
+.top-post h2{
   font-size: 18px;
   font-weight: bold;
 }
