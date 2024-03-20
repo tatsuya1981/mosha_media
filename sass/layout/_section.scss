@@ -5,10 +5,10 @@ layout > section
 ------------------------------
 */
 .l-section {
-  padding: 56px 0;
+  padding-top: 56px;
 }
 @include g.min(md) {
   .l-section {
-    padding: 64px 0;
+    padding-top: 64px;
   }
 }

@@ -47,6 +47,10 @@ layout > header
 .header-icon {
   width: 32px;
   height: 32px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .header-nav {

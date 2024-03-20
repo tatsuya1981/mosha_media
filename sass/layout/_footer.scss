@@ -7,6 +7,10 @@ layout > footer
 
 .footer {
   background-color: rgba(197, 171, 95, 0.1);
+  margin-top: 54px;
+  @include g.min(md) {
+    margin-top: 64px;
+  }
 }
 
 .footer-container {
@@ -125,6 +129,9 @@ layout > footer
 .footer-icon {
   width: 32px;
   height: 32px;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .footer-list {

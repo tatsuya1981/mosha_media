@@ -544,6 +544,12 @@ layout > footer
 */
 .footer {
   background-color: rgba(197, 171, 95, 0.1);
+  margin-top: 54px;
+}
+@media (width >= 768px) {
+  .footer {
+    margin-top: 64px;
+  }
 }
 
 .footer-container {
@@ -673,6 +679,9 @@ layout > footer
   width: 32px;
   height: 32px;
 }
+.footer-icon:hover {
+  opacity: 0.5;
+}
 
 .footer-list {
   margin-top: 32px;
@@ -767,6 +776,9 @@ layout > header
   width: 32px;
   height: 32px;
 }
+.header-icon:hover {
+  opacity: 0.5;
+}
 
 .header-nav {
   height: 40px;
@@ -847,12 +859,12 @@ layout > section
 ------------------------------
 */
 .l-section {
-  padding: 56px 0;
+  padding-top: 56px;
 }
 
 @media (width >= 768px) {
   .l-section {
-    padding: 64px 0;
+    padding-top: 64px;
   }
 }
 /*!
@@ -1117,11 +1129,27 @@ page > top
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
+@media (width >= 768px) {
+  .top-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width >= 1200px) {
+  .top-posts {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1080px;
+    gap: 40px 24px;
+  }
+}
 
 .top-post {
   max-width: 324px;
   height: 274px;
   margin: 0 auto;
+  transition: 0.3s;
+}
+.top-post img:hover {
+  transform: scale(1.05);
 }
 @media (width >= 768px) {
   .top-post {
@@ -1181,12 +1209,16 @@ page > top
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .top-pagination li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.top-pagination li:hover {
+  opacity: 0.5;
 }
 
 /*!
