@@ -745,6 +745,7 @@ layout > header
 @media (width >= 768px) {
   .header-container {
     width: 80%;
+    max-width: 1080px;
     height: 75px;
   }
 }
@@ -795,6 +796,7 @@ layout > header
 
 .header-menu {
   width: 90%;
+  max-width: 1080px;
   overflow-x: auto;
 }
 @media (width >= 768px) {
@@ -1240,6 +1242,28 @@ page > contact
 page > archive
 ------------------------------
 */
-/*💡ここに『アーカイブページのコード』を書く*/
+.archive-title {
+  width: 100%;
+  height: 132px;
+  background-image: url(../img/archive/bg-pattern-page-head.png);
+  background-size: auto;
+  background-repeat: repeat;
+  display: flex;
+}
+.archive-title h1 {
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+}
+@media (width >= 768px) {
+  .archive-title h1 {
+    width: 80%;
+    max-width: 1080px;
+    font-size: 26px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

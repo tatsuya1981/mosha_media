@@ -19,6 +19,7 @@ layout > header
 
   @include g.min(md) {
     width: 80%;
+    max-width: 1080px;
     height: 75px;
   }
 }
@@ -68,6 +69,7 @@ layout > header
 
 .header-menu {
   width: 90%;
+  max-width: 1080px;
   overflow-x: auto;
 
   @include g.min(md) {
@@ -79,6 +81,7 @@ layout > header
   width: max-content;
   display: flex;
   list-style: none;
+
   & a:hover{
     color: gray;
   }
